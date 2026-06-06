@@ -30,6 +30,20 @@ _|ID|_|Password|AuthHash
 _|ID|_|Password|_|_|_|AuthHash
 ```
 
+These formats were used by different versions of the original launcher system. By reproducing the expected authentication parameters, the launcher can automatically log the client into the game.
+
+### Additional Notes
+
+#### Korean Client Authentication
+
+Unlike overseas versions of the game, Korean clients do not provide an in-game login screen. Authentication is expected to be performed by an external launcher before the game starts.
+
+As a result, Korean-region clients require launcher authentication in order to run, regardless of the client version. Launching the executable directly without providing the expected login parameters will prevent normal access to the game.
+
+#### Version 1.325 and iamshuruk
+
+For version 1.325, the `iamshuruk` feature is only available when the client is started through the launcher authentication process described above. Simply enabling the corresponding configuration entry is not sufficient; the login parameters must also be supplied by the launcher.
+
 ### TODO
 
 * Refactor the authentication system so that `AuthHash` can be obtained from a real authentication service instead of using a hardcoded value.
