@@ -27,7 +27,7 @@ _|ID|_|Password|AuthHash
 **Version 1.627 format**
 
 ```text
-_|ID|_|Password|Auth?|NEOWIZ_PCBID|SERVICE_TYPE|Age|_|_
+USN|ID|TimeStamp|Cash|TAG|NEOWIZ_PCBID|SERVICE_TYPE|Age|AUTH_TICKET?|OTT
 ```
 
 These formats were used by different versions of the original launcher system. By reproducing the expected authentication parameters, the launcher can automatically log the client into the game.
